@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Calculator</title>
+        <style>
+            .header
+            {
+                color: black;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+
+            .button-container 
+            {
+                display: flex;
+                justify-content: center;
+            }
+
+            .space
+            {
+                margin: 6px;
+            }
+
+            .button2 
+            {
+                background-color: #007BFF;
+                color: #fff;
+                padding: 20px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 6px;
+            }
+
+            .button 
+            {
+                background-color: #007BFF;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 1px;
+            }
+        </style>        
+    </head>
+
+    <body>
+        <h1 class="header"><center>Welcome to Summoners Rift!</center></h1>
+
+        <form id="searchForm" class="button-container">
+            <input type="text" id="OutputCal">
+            <button id="deleteInput" class="button2" onclick="buttonClick(405)">Del</button>
+        </form>
+
+        <div class="space"></div>
+
+        <div class="button-container">
+            <button id="num1" class="button" onclick="buttonClick(1)">1</button>
+            <button id="num2" class="button" onclick="buttonClick(2)">2</button>
+            <button id="num3" class="button" onclick="buttonClick(3)">3</button>
+            <button id="clearButton" class="button" onclick="buttonClick(404)">C</button>
+        </div>
+        <div class="button-container">
+            <button id="num4" class="button" onclick="buttonClick(4)">4</button>
+            <button id="num5" class="button" onclick="buttonClick(5)">5</button>
+            <button id="num6" class="button" onclick="buttonClick(6)">6</button>
+            <button id="num6" class="button" onclick="buttonClick(2)">+</button>
+        </div>
+        <div class="button-container">
+            <button id="num7" class="button" onclick="buttonClick(7)">7</button>
+            <button id="num8" class="button" onclick="buttonClick(8)">8</button>
+            <button id="num9" class="button" onclick="buttonClick(9)">9</button>
+            <button id="num9" class="button" onclick="buttonClick(2)">-</button>
+        </div>
+        <div class="button-container">
+            <button id="num0" class="button" onclick="buttonClick(0)">0</button>
+        </div>
+
+        <script>
+            function buttonClick(x)
+            {
+                if(x == 404)
+                {
+                    var clearButton = document.getElementById("clearButton");
+                    var myInput = document.getElementById("OutputCal");
+
+                    clearButton.addEventListener("click", function() { myInput.value = '';});             
+                }
+                else if(x == 405)
+                {
+                    var backspaceButton = document.getElementById("deleteInput");
+                    var myInput = document.getElementById("OutputCal");
+
+                    backspaceButton.addEventListener("click", function() {
+                        var currentValue = myInput.value;
+                        
+                        if (currentValue.length > 0) 
+                        {
+                            myInput.value = currentValue.slice(0, -1);
+                        }
+                    });
+                }
+                else
+                {
+                    var inputField = document.getElementById("OutputCal");
+                    var inputValue = inputField.value;
+                    OutputCal.value = inputValue+x;
+                }
+            }
+        </script>
+
+    </body>
+</html> 
