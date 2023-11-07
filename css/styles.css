@@ -39,7 +39,31 @@ body
 {
     margin: 2.5px;
 }
-                              
+
+.custom-input {
+    width: 200px;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+}
+
+.custom-input::placeholder 
+{
+    color: #999;
+}
+
+.custom-input:focus 
+{
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
 #OutputCal 
 {
     height: 50px;
