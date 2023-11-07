@@ -1,3 +1,6 @@
+var num = [];
+var count = 0;
+
 function buttonClick(x)
 {
     if(x == 404)
@@ -16,7 +19,7 @@ function buttonClick(x)
     {
         var inputField = document.getElementById("OutputCal");
         var inputValue = inputField.value;
-        OutputCal.value = inputValue + "+";        
+        OutputCal.value = inputValue + "+"; 
     }
     else if(x == 407)
     {
@@ -51,32 +54,27 @@ function buttonClick(x)
     else if(x == 413)
     {
         var inputField = document.getElementById("OutputCal");
-        var inputValue = inputField.value;
-        OutputCal.value = inputValue + "=";    
-    }
-    else if(x == 408)
-    {
-        var inputField = document.getElementById("OutputCal");
-        var inputValue = inputField.value;
-        // OutputCal.value = "You typed: " + inputValue;     
-        OutputCal.value = ""; 
-        OutputCal.value = calculate(inputValue);
+        var inputValue = inputField.value;     
+       // OutputCal.value = ""; 
+        OutputCal.value = calculate();  
     }
     else
     {
         var inputField = document.getElementById("OutputCal");
         var inputValue = inputField.value;
         OutputCal.value = inputValue+x;
+        num[count] = x;
+        count++;
     }
 }
 
-function calculate(input)
+function calculate() 
 {
-    const numericPattern = /^\d+$/;
-    if (numericPattern.test(input))
+    var result = num[1] + num[0];
+    for (let i = 0; i < 10; i++)
     {
-
+        num[i] = 0;
     }
-    else return("ERROR!!");
-    return (69);
+    count = 0;
+    return (result);
 }
