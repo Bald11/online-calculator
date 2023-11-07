@@ -1,6 +1,6 @@
 body 
 {
-    background-color: black;
+    background-color: rgb(24, 24, 24);
 }
 .header
 {
@@ -8,12 +8,27 @@ body
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+
+.icon
+{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-image: url('/online-calculator/images/backspace_icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    justify-content: center;
+}
+
 .button 
 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
     background-color: #007BFF;
-    color: #fff;
+    color: black;
+    font-weight: bold;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;

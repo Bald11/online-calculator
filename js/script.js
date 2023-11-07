@@ -2,24 +2,15 @@ function buttonClick(x)
 {
     if(x == 404)
     {
-        var clearButton = document.getElementById("clearButton");
-        var myInput = document.getElementById("OutputCal");
-
-        clearButton.addEventListener("click", function() { myInput.value = '';});             
+        var inputField = document.getElementById("OutputCal");
+        var inputValue = inputField.value;    
+        OutputCal.value = "";             
     }
     else if(x == 405)
     {
-        var backspaceButton = document.getElementById("deleteInput");
-        var myInput = document.getElementById("OutputCal");
-
-        backspaceButton.addEventListener("click", function() {
-            var currentValue = myInput.value;
-            
-            if (currentValue.length > 0) 
-            {
-                myInput.value = currentValue.slice(0, -1);
-            }
-        });
+        var inputField = document.getElementById("OutputCal");
+        var inputValue = inputField.value;    
+        OutputCal.value = inputValue.slice(0, -1);
     }
     else if(x == 406)
     {
@@ -32,6 +23,36 @@ function buttonClick(x)
         var inputField = document.getElementById("OutputCal");
         var inputValue = inputField.value;
         OutputCal.value = inputValue + "-";    
+    }
+    else if(x == 409)
+    {
+        var inputField = document.getElementById("OutputCal");
+        var inputValue = inputField.value;
+        OutputCal.value = inputValue + "x";    
+    }
+    else if(x == 410)
+    {
+        var inputField = document.getElementById("OutputCal");
+        var inputValue = inputField.value;
+        OutputCal.value = inputValue + "÷";    
+    }
+    else if(x == 411)
+    {
+        var inputField = document.getElementById("OutputCal");
+        var inputValue = inputField.value;
+        OutputCal.value = inputValue + "%";    
+    }
+    else if(x == 412)
+    {
+        var inputField = document.getElementById("OutputCal");
+        var inputValue = inputField.value;
+        OutputCal.value = inputValue + ".";    
+    }
+    else if(x == 413)
+    {
+        var inputField = document.getElementById("OutputCal");
+        var inputValue = inputField.value;
+        OutputCal.value = inputValue + "=";    
     }
     else if(x == 408)
     {
