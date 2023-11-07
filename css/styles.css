@@ -1,0 +1,100 @@
+body 
+{
+    background-color: black;
+}
+.header
+{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.button 
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1px;                
+    height: 60px;
+    width: 65px;
+    position: absolute;
+    top: 410px;                
+}
+.button[data-position="1"] 
+{
+    left: 270px;
+}
+.button[data-position="2"] 
+{
+    left: 340px;
+}
+.button[data-position="3"] 
+{
+    left: 410px;
+}
+.button[data-position="4"] 
+{
+    left: 480px;
+}
+.button[data-position="5"] 
+{
+    left: 270px;
+    top: 475px;
+}
+.button[data-position="6"] 
+{
+    left: 340px;
+    top: 475px;
+}
+.button[data-position="7"] 
+{
+    left: 410px;
+    top: 475px;
+}
+.button[data-position="8"] 
+{
+    left: 480px;
+    top: 475px;
+}
+.button[data-position="9"] 
+{
+    left: 270px;
+    top: 540px;
+}
+.button[data-position="10"] 
+{
+    left: 340px;
+    top: 540px;
+}            
+.button[data-position="11"] 
+{
+    left: 410px;
+    top: 540px;
+}  
+.button[data-position="12"] 
+{
+    left: 480px;
+    top: 540px;
+}  
+.button[data-position="13"] 
+{
+    left: 480px;
+    top: 640px;
+}  
+.button[data-position="14"] 
+{
+    left: 480px;
+    top: 740px;
+}                                  
+#OutputCal 
+{
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    top: 345px;
+    left: 252px;
+}
