@@ -19,76 +19,97 @@ body
     border-radius: 5px;
     cursor: pointer;
     margin: 1px;                
-    height: 60px;
-    width: 65px;
+    height: 80px;
+    width: 85px;
     position: absolute;
-    top: 410px;                
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button[data-position="0"] 
+{
+    left: 350px;
+    transform: translate(200px, -50%);
 }
 .button[data-position="1"] 
 {
-    left: 270px;
+    left: 350px;
+    transform: translate(200px, -50%);
 }
 .button[data-position="2"] 
 {
-    left: 340px;
+    left: 450px;
+    transform: translate(200px, -50%);    
 }
 .button[data-position="3"] 
 {
-    left: 410px;
+    left: 550px;
+    transform: translate(200px, -50%); 
 }
 .button[data-position="4"] 
 {
-    left: 480px;
+    left: 650px;
+    transform: translate(200px, -50%); 
 }
 .button[data-position="5"] 
 {
-    left: 270px;
-    top: 475px;
+    left: 350px;
+    top: 550px;
+    transform: translate(200px, -50%); 
 }
 .button[data-position="6"] 
 {
-    left: 340px;
-    top: 475px;
+    left: 450px;
+    top: 550px;
+    transform: translate(200px, -50%); 
 }
 .button[data-position="7"] 
 {
-    left: 410px;
-    top: 475px;
+    left: 550px;
+    top: 550px;
+    transform: translate(200px, -50%); 
 }
 .button[data-position="8"] 
 {
-    left: 480px;
-    top: 475px;
+    left: 350px;
+    top: 650px;
+    transform: translate(200px, -50%); 
 }
 .button[data-position="9"] 
 {
-    left: 270px;
-    top: 540px;
+    left: 450px;
+    top: 650px;
+    transform: translate(200px, -50%); 
 }
 .button[data-position="10"] 
 {
-    left: 340px;
-    top: 540px;
+    left: 550px;
+    top: 650px;
+    transform: translate(200px, -50%); 
 }            
 .button[data-position="11"] 
 {
-    left: 410px;
-    top: 540px;
+    left: 250px;
+    top: 270px;
+    transform: translate(200px, -50%); 
 }  
 .button[data-position="12"] 
 {
-    left: 480px;
-    top: 540px;
+    left: 250px;
+    top: 270px;
+    transform: translate(200px, -50%); 
 }  
 .button[data-position="13"] 
 {
-    left: 480px;
-    top: 640px;
+    left: 250px;
+    top: 275px;
+    transform: translate(200px, -50%); 
 }  
 .button[data-position="14"] 
 {
-    left: 480px;
-    top: 740px;
+    left: 250px;
+    top: 275px;
+    transform: translate(200px, -50%); 
 }                                  
 #OutputCal 
 {
@@ -97,4 +118,5 @@ body
     position: absolute;
     top: 345px;
     left: 252px;
+    transform: translate(200px, -50%); 
 }
