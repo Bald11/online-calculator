@@ -17,138 +17,31 @@ body
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    margin: 1px;                
+    cursor: pointer;            
     height: 80px;
     width: 85px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
-.button[data-position="0"] 
+
+.button-container 
 {
-    left: 650px;
-    top: 850px;
-    transform: translate(200px, -65%); 
+    display: flex;
+    justify-content: center;
 }
-.button[data-position="1"] 
+
+.button-container1
 {
-    left: 350px;
-    transform: translate(200px, -65%);
+    display: flex;
+    justify-content: center;    
+    margin: 10px;
 }
-.button[data-position="2"] 
+
+.button-container button 
 {
-    left: 450px;
-    transform: translate(200px, -65%);    
-}
-.button[data-position="3"] 
-{
-    left: 550px;
-    transform: translate(200px, -65%); 
-}
-.button[data-position="4"] 
-{
-    left: 650px;
-    transform: translate(200px, -65%); 
-}
-.button[data-position="5"] 
-{
-    left: 350px;
-    top: 550px;
-    transform: translate(200px, -65%); 
-}
-.button[data-position="6"] 
-{
-    left: 450px;
-    top: 550px;
-    transform: translate(200px, -65%); 
-}
-.button[data-position="7"] 
-{
-    left: 550px;
-    top: 550px;
-    transform: translate(200px, -65%); 
-}
-.button[data-position="8"] 
-{
-    left: 650px;
-    top: 550px;
-    transform: translate(200px, -65%); 
-}
-.button[data-position="9"] 
-{
-    left: 350px;
-    top: 650px;
-    transform: translate(200px, -65%); 
-}
-.button[data-position="10"] 
-{
-    left: 450px;
-    top: 650px;
-    transform: translate(200px, -65%); 
-}            
-.button[data-position="11"] 
-{
-    left: 550px;
-    top: 650px;
-    transform: translate(200px, -65%); 
-}  
-.button[data-position="12"] 
-{
-    left: 650px;
-    top: 650px;
-    transform: translate(200px, -65%); 
-}  
-.button[data-position="13"] 
-{
-    left: 350px;
-    top: 750px;
-    transform: translate(200px, -65%); 
-}  
-.button[data-position="14"] 
-{
-    left: 450px;
-    top: 750px;
-    transform: translate(200px, -65%); 
-}   
-.button[data-position="15"] 
-{
-    left: 550px;
-    top: 750px;
-    transform: translate(200px, -65%); 
-} 
-.button[data-position="16"] 
-{
-    left: 650px;
-    top: 750px;
-    transform: translate(200px, -65%); 
-}  
-.button[data-position="17"] 
-{
-    left: 350px;
-    top: 850px;
-    transform: translate(200px, -65%); 
-}
-.button[data-position="18"] 
-{
-    left: 450px;
-    top: 850px;
-    transform: translate(200px, -65%); 
-}
-.button[data-position="19"] 
-{
-    left: 550px;
-    top: 850px;
-    transform: translate(200px, -65%); 
+    margin: 2.5px;
 }
                               
 #OutputCal 
 {
     height: 50px;
     width: 382px;
-    position: absolute;
-    top: 360px;
-    left: 348px;
-    transform: translate(200px, -65%); 
 }
