@@ -50,7 +50,7 @@
 
         <form id="searchForm" class="button-container">
             <input type="text" id="OutputCal">
-            <button id="deleteInput" class="button2" onclick="buttonClick(405)">Del</button>
+            <button id="enter" class="button2" onclick="buttonClick(408)">Enter</button>
         </form>
 
         <div class="space"></div>
@@ -65,50 +65,19 @@
             <button id="num4" class="button" onclick="buttonClick(4)">4</button>
             <button id="num5" class="button" onclick="buttonClick(5)">5</button>
             <button id="num6" class="button" onclick="buttonClick(6)">6</button>
-            <button id="num6" class="button" onclick="buttonClick(2)">+</button>
+            <button id="add" class="button" onclick="buttonClick(406)">+</button>
         </div>
         <div class="button-container">
             <button id="num7" class="button" onclick="buttonClick(7)">7</button>
             <button id="num8" class="button" onclick="buttonClick(8)">8</button>
             <button id="num9" class="button" onclick="buttonClick(9)">9</button>
-            <button id="num9" class="button" onclick="buttonClick(2)">-</button>
+            <button id="subtract" class="button" onclick="buttonClick(407)">-</button>
         </div>
         <div class="button-container">
             <button id="num0" class="button" onclick="buttonClick(0)">0</button>
+            <button id="deleteInput" class="button" onclick="buttonClick(405)">Del</button>
         </div>
 
-        <script>
-            function buttonClick(x)
-            {
-                if(x == 404)
-                {
-                    var clearButton = document.getElementById("clearButton");
-                    var myInput = document.getElementById("OutputCal");
-
-                    clearButton.addEventListener("click", function() { myInput.value = '';});             
-                }
-                else if(x == 405)
-                {
-                    var backspaceButton = document.getElementById("deleteInput");
-                    var myInput = document.getElementById("OutputCal");
-
-                    backspaceButton.addEventListener("click", function() {
-                        var currentValue = myInput.value;
-                        
-                        if (currentValue.length > 0) 
-                        {
-                            myInput.value = currentValue.slice(0, -1);
-                        }
-                    });
-                }
-                else
-                {
-                    var inputField = document.getElementById("OutputCal");
-                    var inputValue = inputField.value;
-                    OutputCal.value = inputValue+x;
-                }
-            }
-        </script>
-
+        <script src="js/script.js"></script>
     </body>
 </html> 
