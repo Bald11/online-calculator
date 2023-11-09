@@ -145,6 +145,23 @@ function calculate()
             result = beforeAtAsInt / afterAtAsInt;
         }
     }
+    if (inputValue.includes('/'))
+    {
+        let myString = inputValue;
+        let atIndex = myString.indexOf('/');
+
+        if (atIndex !== -1) 
+        {
+            let beforeAt = myString.substring(0, atIndex);
+            let afterAt = myString.substring(atIndex + 1);
+
+            let beforeAtAsInt = parseInt(beforeAt, 10);
+            let afterAtAsInt = parseInt(afterAt, 10);
+
+            if (afterAtAsInt == 0) return("Error");
+            result = beforeAtAsInt / afterAtAsInt;
+        }
+    }
     if (inputValue.includes('%'))
     {
         let myString = inputValue;
