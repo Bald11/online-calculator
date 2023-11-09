@@ -1,6 +1,12 @@
 body 
 {
-    background-color: rgb(24, 24, 24);
+    background: 
+        url(images/mordekaiser-lol.gif) no-repeat left top,
+        url(images/aatrox-lol.gif) no-repeat right top,
+        url(images/pyke-lol.gif) no-repeat left bottom,
+        url(images/viego-lol.gif) no-repeat right bottom,
+        url(images/4k-lol-bg.png) no-repeat center;
+    background-size: auto;
 }
 .header
 {
