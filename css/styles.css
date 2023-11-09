@@ -62,7 +62,14 @@ body
     margin: 2.5px;
 }
 
-.custom-input {
+.ww-image
+{
+    max-height: 310px; 
+    width: auto;
+}
+
+.custom-input 
+{
     width: 200px;
     height: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
