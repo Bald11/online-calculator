@@ -1,11 +1,11 @@
 body 
 {
     background: 
-        url(images/jhin-lol.gif) no-repeat left top,
+        url(images/jhin.gif) no-repeat left top,
         url(images/fiddlesticks-lol.gif) no-repeat right top,
         url(images/mordekaiser-lol.gif) no-repeat left center,
-        url(images/aatrox-lol.gif) no-repeat right center,
-        url(images/pyke-lol.gif) no-repeat left bottom,
+        url(images/aatrox.gif) no-repeat right center,
+        url(images/pyke.gif) no-repeat left bottom,
         url(images/viego-lol.gif) no-repeat right bottom,
         url(images/4k-lol-bg.png) no-repeat center;
         background-size: 500px, 500px, 500px, 500px, 500px, 500px, auto;
@@ -22,6 +22,12 @@ body
     font-family: 'lolfont';
     src: url('fonts/BeaufortforLOL-Bold.otf') format('opentype'),
     url('fonts/BeaufortforLOL-Bold.ttf') format('truetype');
+}
+
+.ww-image
+{
+    max-height: 310px; 
+    width: auto;
 }
 
 .icon
@@ -52,6 +58,11 @@ body
     width: 85px;
 }
 
+.button:hover
+{
+    background-color: rgba(0, 123, 255, 0.9);
+}
+
 .button-container 
 {
     display: flex;
@@ -70,7 +81,7 @@ body
     margin: 2.5px;
 }
 
-.ww-image
+.video
 {
     max-height: 310px; 
     width: auto;
